@@ -1,49 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <link rel="stylesheet" href="style.css">
+  <title>Your Name | Developer Portfolio</title>
+
+  <link rel="stylesheet" href="style.css"/>
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
 </head>
+
 <body>
 
-  <header>
-    <h1>Your Name</h1>
-    <p>Beginner Web Developer</p>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">YN.</div>
 
-    <a href="#projects" class="btn">View Projects</a>
-  </header>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-  <section id="about">
-    <h2>About Me</h2>
+  <!-- HERO -->
+  <section class="hero">
 
-    <p>
-      Hi! I'm learning web development and building cool projects.
+    <div class="hero-text">
+      <p class="intro">Hi, my name is</p>
+
+      <h1>Your Name</h1>
+
+      <h2>I build modern websites.</h2>
+
+      <p class="description">
+        Beginner developer focused on creating beautiful,
+        responsive, and interactive web experiences.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="btn-primary">View Projects</a>
+
+        <a href="https://github.com/" target="_blank" class="btn-secondary">
+          GitHub
+        </a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about-container">
+
+      <div class="about-text">
+        <p>
+          I'm a web developer learning HTML, CSS, and JavaScript.
+          I enjoy designing clean user interfaces and building
+          interactive projects.
+        </p>
+
+        <p>
+          Currently focused on frontend development and improving
+          my UI/UX design skills.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <img
+          src="https://picsum.photos/500/300"
+          alt="Project Screenshot"
+        />
+
+        <div class="project-content">
+          <h3>Portfolio Website</h3>
+
+          <p>
+            A responsive portfolio website built with HTML,
+            CSS, and JavaScript.
+          </p>
+
+          <div class="project-links">
+            <a href="#">Live Demo</a>
+            <a href="#">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img
+          src="https://picsum.photos/501/300"
+          alt="Project Screenshot"
+        />
+
+        <div class="project-content">
+          <h3>Weather App</h3>
+
+          <p>
+            Weather application using an API to display
+            live weather data.
+          </p>
+
+          <div class="project-links">
+            <a href="#">Live Demo</a>
+            <a href="#">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills-grid">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">GitHub</div>
+      <div class="skill">Responsive Design</div>
+      <div class="skill">UI Design</div>
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+
+    <h2 class="section-title">Contact</h2>
+
+    <p class="contact-text">
+      Want to work together or chat about projects?
     </p>
+
+    <a href="mailto:youremail@example.com" class="btn-primary">
+      Say Hello
+    </a>
+
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Your Name</p>
+  </footer>
 
-    <div class="project-card">
-      <h3>Calculator App</h3>
-      <p>A simple calculator made with JavaScript.</p>
-    </div>
-
-    <div class="project-card">
-      <h3>Game Website</h3>
-      <p>A small browser game project.</p>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-
-    <p>Email: your@email.com</p>
-  </section>
-
-  <script src="script.js"></script>
 </body>
 </html>
