@@ -81,10 +81,16 @@ body {
   }
 }
 
-/* LOADER */
+/* =========================
+   LOADER SCREEN
+========================= */
 
 .loader-wrapper {
+
   position: fixed;
+
+  top: 0;
+  left: 0;
 
   width: 100%;
   height: 100vh;
@@ -103,13 +109,31 @@ body {
 }
 
 .loader-wrapper.fade {
+
   opacity: 0;
+
   visibility: hidden;
 }
 
+/* LOADER CONTENT */
+
+.loader-container {
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 30px;
+}
+
+/* SPINNER */
+
 .loader {
-  width: 80px;
-  height: 80px;
+
+  width: 90px;
+  height: 90px;
 
   border-radius: 50%;
 
@@ -128,6 +152,36 @@ body {
 
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* TEXT */
+
+.loader-text {
+
+  font-family: 'Space Grotesk', sans-serif;
+
+  font-size: 2rem;
+
+  color: #38bdf8;
+
+  letter-spacing: 2px;
+
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+
+  0% {
+    opacity: 0.4;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.4;
   }
 }
 
