@@ -185,6 +185,20 @@ body {
   }
 }
 
+/* ACTIVE NAV LINK */
+
+.nav-links a.active-link {
+
+  color: #38bdf8;
+
+  transform: scale(1.12);
+}
+
+.nav-links a.active-link::after {
+
+  width: 100%;
+}
+
 /* NAVBAR */
 
 .navbar {
