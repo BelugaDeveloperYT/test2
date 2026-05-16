@@ -231,24 +231,42 @@
 
   </section>
 
-  <!-- CONTACT -->
+<!-- CONTACT -->
 
-  <section id="contact" class="section reveal">
+<section id="contact" class="section reveal">
 
-    <h2 class="section-title">Contact</h2>
+  <h2 class="section-title">
+    Contact Me
+  </h2>
 
-    <p class="contact-text">
-      Want to work together or chat?
+  <div class="contact-card">
+
+    <p class="contact-label">
+      Email
     </p>
 
-    <a
-      href="https://discord.gg/ugZ5tTSy9B"
-      class="btn-primary"
-    >
-      Say Hello
-    </a>
+    <div class="copy-box">
 
-  </section>
+      <input
+        type="text"
+        value="you@example.com"
+        id="emailInput"
+        readonly
+      >
+
+      <button onclick="copyEmail()">
+        <i class="fa-solid fa-copy"></i>
+      </button>
+
+    </div>
+
+    <p class="copy-message" id="copyMessage">
+      Copied!
+    </p>
+
+  </div>
+
+</section>
 
   <!-- FOOTER -->
 
