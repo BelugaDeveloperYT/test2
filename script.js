@@ -124,6 +124,33 @@ themeToggle.addEventListener(
   "light");
 });
 
+// COPY EMAIL
+
+function copyEmail() {
+
+  const emailInput =
+  document.getElementById(
+  "emailInput");
+
+  const copyMessage =
+  document.getElementById(
+  "copyMessage");
+
+  navigator.clipboard.writeText(
+    emailInput.value
+  );
+
+  copyMessage.classList.add(
+  "show");
+
+  setTimeout(() => {
+
+    copyMessage.classList.remove(
+    "show");
+
+  }, 2000);
+}
+
 // ACTIVE NAVIGATION
 
 const sections =
