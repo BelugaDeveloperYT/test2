@@ -2,133 +2,197 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
 
   <title>Your Name | Developer Portfolio</title>
 
-  <link rel="stylesheet" href="style.css"/>
+  <!-- GOOGLE FONTS -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- FONT AWESOME -->
 
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
   <!-- LOADER -->
-<div class="loader-wrapper">
-  <div class="loader"></div>
-</div>
- 
+
+  <div class="loader-wrapper">
+    <div class="loader"></div>
+  </div>
+
+  <!-- PARTICLES -->
+
+  <div id="particles"></div>
+
+  <!-- CURSOR -->
+
+  <div class="cursor-glow"></div>
+
   <!-- NAVBAR -->
+
   <nav class="navbar">
+
     <div class="logo">YN.</div>
 
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
+    <ul class="nav-links">
+
+      <li><a href="#about">About</a></li>
+
+      <li><a href="#projects">Projects</a></li>
+
+      <li><a href="#skills">Skills</a></li>
+
+      <li><a href="#contact">Contact</a></li>
+
+    </ul>
+
+  </nav>
 
   <!-- HERO -->
+
   <section class="hero">
 
-    <div class="hero-text">
+    <div class="hero-content">
+
       <p class="intro">Hi, my name is</p>
 
       <h1>Your Name</h1>
 
       <h2>I build modern websites.</h2>
 
+      <div class="typing-text"></div>
+
       <p class="description">
-        Beginner developer focused on creating beautiful,
-        responsive, and interactive web experiences.
+        Frontend developer focused on modern,
+        responsive, animated web experiences.
       </p>
 
       <div class="hero-buttons">
-        <a href="#projects" class="btn-primary">View Projects</a>
 
-        <a href="https://github.com/" target="_blank" class="btn-secondary">
+        <a href="#projects" class="btn-primary">
+          View Projects
+        </a>
+
+        <a
+          href="https://github.com/"
+          target="_blank"
+          class="btn-secondary"
+        >
           GitHub
         </a>
+
       </div>
+
     </div>
 
   </section>
 
   <!-- ABOUT -->
-  <section id="about" class="section">
+
+  <section id="about" class="section reveal">
 
     <h2 class="section-title">About Me</h2>
 
-    <div class="about-container">
+    <div class="about-text">
 
-      <div class="about-text">
-        <p>
-          I'm a web developer learning HTML, CSS, and JavaScript.
-          I enjoy designing clean user interfaces and building
-          interactive projects.
-        </p>
+      <p>
+        I'm a developer learning modern web
+        technologies and creating clean,
+        interactive UI designs.
+      </p>
 
-        <p>
-          Currently focused on frontend development and improving
-          my UI/UX design skills.
-        </p>
-      </div>
+      <br>
+
+      <p>
+        I enjoy building polished websites,
+        animations, and frontend projects.
+      </p>
 
     </div>
 
   </section>
 
   <!-- PROJECTS -->
-  <section id="projects" class="section">
+
+  <section id="projects" class="section reveal">
 
     <h2 class="section-title">Projects</h2>
 
     <div class="projects-grid">
 
       <div class="project-card">
+
         <img
           src="https://picsum.photos/500/300"
-          alt="Project Screenshot"
+          alt="Project"
         />
 
         <div class="project-content">
+
           <h3>Portfolio Website</h3>
 
           <p>
-            A responsive portfolio website built with HTML,
-            CSS, and JavaScript.
+            Professional animated developer
+            portfolio website.
           </p>
 
           <div class="project-links">
+
             <a href="#">Live Demo</a>
+
             <a href="#">GitHub</a>
+
           </div>
+
         </div>
+
       </div>
 
       <div class="project-card">
+
         <img
           src="https://picsum.photos/501/300"
-          alt="Project Screenshot"
+          alt="Project"
         />
 
         <div class="project-content">
+
           <h3>Weather App</h3>
 
           <p>
-            Weather application using an API to display
-            live weather data.
+            Dynamic weather app using APIs
+            and animated UI.
           </p>
 
           <div class="project-links">
+
             <a href="#">Live Demo</a>
+
             <a href="#">GitHub</a>
+
           </div>
+
         </div>
+
       </div>
 
     </div>
@@ -136,40 +200,58 @@
   </section>
 
   <!-- SKILLS -->
-  <section id="skills" class="section">
+
+  <section id="skills" class="section reveal">
 
     <h2 class="section-title">Skills</h2>
 
     <div class="skills-grid">
+
       <div class="skill">HTML</div>
       <div class="skill">CSS</div>
       <div class="skill">JavaScript</div>
       <div class="skill">GitHub</div>
       <div class="skill">Responsive Design</div>
-      <div class="skill">UI Design</div>
+      <div class="skill">Animations</div>
+
     </div>
 
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="section">
+
+  <section id="contact" class="section reveal">
 
     <h2 class="section-title">Contact</h2>
 
     <p class="contact-text">
-      Want to work together or chat about projects?
+      Want to work together or chat?
     </p>
 
-    <a href="mailto:youremail@example.com" class="btn-primary">
+    <a
+      href="mailto:you@example.com"
+      class="btn-primary"
+    >
       Say Hello
     </a>
 
   </section>
 
   <!-- FOOTER -->
+
   <footer>
-    <p>© 2026 Your Name</p>
+    <p>© Portfolio. All rights served.</p>
   </footer>
+
+  <!-- THEME TOGGLE -->
+
+  <button id="theme-toggle">
+
+    <i class="fa-solid fa-moon"></i>
+
+  </button>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
