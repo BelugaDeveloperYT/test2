@@ -49,10 +49,10 @@ revealSections();
 
 const text = [
 
-  "Frontend Developer",
-  "UI Designer",
-  "Creative Coder",
-  "JavaScript Learner"
+  "Game Developer",
+  "YouTuber",
+  "Creative",
+  "Gamer"
 ];
 
 let count = 0;
