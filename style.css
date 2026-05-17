@@ -715,6 +715,72 @@ footer {
   transform: translate(-50%, -50%);
 }
 
+/* =========================
+   SOCIALS
+========================= */
+
+.socials {
+
+  margin-top: 35px;
+
+  display: flex;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 18px;
+}
+
+/* SOCIAL CARD */
+
+.social-card {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 14px 20px;
+
+  border-radius: 16px;
+
+  text-decoration: none;
+
+  color: white;
+
+  background:
+  rgba(255,255,255,0.06);
+
+  border:
+  1px solid rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(12px);
+
+  transition: 0.3s ease;
+}
+
+.social-card i {
+
+  font-size: 1.1rem;
+
+  color: #38bdf8;
+}
+
+.social-card:hover {
+
+  transform:
+  translateY(-5px)
+  scale(1.05);
+
+  background:
+  rgba(56,189,248,0.12);
+
+  box-shadow:
+  0 10px 30px rgba(56,189,248,0.25);
+}
+
 /* THEME BUTTON */
 
 #theme-toggle {
