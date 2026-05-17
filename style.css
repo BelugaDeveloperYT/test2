@@ -547,13 +547,13 @@ body {
 
 .contact-card {
 
-  max-width: 650px;
+  max-width: 700px;
 
   margin: auto;
 
-  padding: 40px;
+  padding: 45px;
 
-  border-radius: 24px;
+  border-radius: 26px;
 
   background:
   rgba(255,255,255,0.05);
@@ -566,18 +566,7 @@ body {
   text-align: center;
 
   box-shadow:
-  0 20px 50px rgba(0,0,0,0.3);
-
-  transition: 0.3s ease;
-}
-
-.contact-card:hover {
-
-  transform:
-  translateY(-6px);
-
-  box-shadow:
-  0 25px 60px rgba(0,0,0,0.4);
+  0 20px 50px rgba(0,0,0,0.35);
 }
 
 /* LABEL */
@@ -589,27 +578,39 @@ body {
   margin-bottom: 25px;
 
   color: #cbd5e1;
+
+  text-align: center;
 }
 
-/* COPY BOX */
+/* =========================
+   COPY BOX
+========================= */
 
 .copy-box {
+
+  width: 100%;
+
+  max-width: 520px;
+
+  margin: auto;
 
   display: flex;
 
   align-items: center;
 
+  justify-content: center;
+
   gap: 12px;
+
+  padding: 12px;
+
+  border-radius: 18px;
 
   background:
   rgba(255,255,255,0.06);
 
   border:
   1px solid rgba(255,255,255,0.08);
-
-  padding: 12px;
-
-  border-radius: 18px;
 }
 
 /* INPUT */
@@ -629,6 +630,8 @@ body {
   font-size: 1rem;
 
   text-align: center;
+
+  font-family: inherit;
 }
 
 /* BUTTON */
@@ -642,6 +645,8 @@ body {
 
   border-radius: 14px;
 
+  cursor: pointer;
+
   background:
   linear-gradient(
     135deg,
@@ -650,10 +655,6 @@ body {
   );
 
   color: #020617;
-
-  font-size: 1rem;
-
-  cursor: pointer;
 
   transition: 0.3s ease;
 }
@@ -667,11 +668,15 @@ body {
   0 10px 25px rgba(56,189,248,0.35);
 }
 
-/* COPIED MESSAGE */
+/* =========================
+   COPIED TEXT
+========================= */
 
 .copy-message {
 
   margin-top: 18px;
+
+  text-align: center;
 
   color: #38bdf8;
 
@@ -681,9 +686,119 @@ body {
 }
 
 .copy-message.show {
+
   opacity: 1;
 }
 
+/* =========================
+   SOCIALS
+========================= */
+
+.socials {
+
+  margin-top: 35px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 18px;
+}
+
+/* BASE SOCIAL CARD */
+
+.social-card {
+
+  min-width: 150px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 15px 24px;
+
+  border-radius: 18px;
+
+  text-decoration: none;
+
+  color: white;
+
+  font-weight: 600;
+
+  transition: 0.3s ease;
+
+  box-shadow:
+  0 10px 25px rgba(0,0,0,0.25);
+}
+
+.social-card:hover {
+
+  transform:
+  translateY(-6px)
+  scale(1.05);
+}
+
+/* DISCORD */
+
+.discord {
+
+  background:
+  linear-gradient(
+    135deg,
+    #5865F2,
+    #404EED
+  );
+}
+
+.discord:hover {
+
+  box-shadow:
+  0 12px 30px rgba(88,101,242,0.45);
+}
+
+/* ROBLOX */
+
+.roblox {
+
+  background:
+  linear-gradient(
+    135deg,
+    #38bdf8,
+    #0ea5e9
+  );
+}
+
+.roblox:hover {
+
+  box-shadow:
+  0 12px 30px rgba(56,189,248,0.45);
+}
+
+/* GUNS */
+
+.guns {
+
+  background:
+  linear-gradient(
+    135deg,
+    #ff4fd8,
+    #ff2fb9
+  );
+}
+
+.guns:hover {
+
+  box-shadow:
+  0 12px 30px rgba(255,79,216,0.45);
+}
 /* FOOTER */
 
 footer {
@@ -763,116 +878,6 @@ footer {
   text-align: center;
 }
 
-/* =========================
-   SOCIALS
-========================= */
-
-.socials {
-
-  margin-top: 35px;
-
-  display: flex;
-
-  justify-content: center;
-
-  flex-wrap: wrap;
-
-  gap: 18px;
-}
-
-/* BASE CARD */
-
-.social-card {
-
-  display: flex;
-
-  align-items: center;
-
-  gap: 10px;
-
-  padding: 14px 22px;
-
-  border-radius: 18px;
-
-  text-decoration: none;
-
-  color: white;
-
-  font-weight: 500;
-
-  transition: 0.3s ease;
-
-  box-shadow:
-  0 10px 25px rgba(0,0,0,0.2);
-}
-
-.social-card i {
-
-  font-size: 1.1rem;
-}
-
-/* HOVER */
-
-.social-card:hover {
-
-  transform:
-  translateY(-6px)
-  scale(1.06);
-}
-
-/* DISCORD */
-
-.discord {
-
-  background:
-  linear-gradient(
-    135deg,
-    #5865F2,
-    #404EED
-  );
-}
-
-.discord:hover {
-
-  box-shadow:
-  0 12px 30px rgba(88,101,242,0.4);
-}
-
-/* ROBLOX */
-
-.roblox {
-
-  background:
-  linear-gradient(
-    135deg,
-    #38bdf8,
-    #0ea5e9
-  );
-}
-
-.roblox:hover {
-
-  box-shadow:
-  0 12px 30px rgba(56,189,248,0.4);
-}
-
-/* GUNS.LOL */
-
-.guns {
-
-  background:
-  linear-gradient(
-    135deg,
-    #ff4fd8,
-    #ff2fb9
-  );
-}
-
-.guns:hover {
-
-  box-shadow:
-  0 12px 30px rgba(255,79,216,0.4);
-}
 /* THEME BUTTON */
 
 #theme-toggle {
