@@ -716,6 +716,54 @@ footer {
 }
 
 /* =========================
+   COPY BOX CENTER
+========================= */
+
+.copy-box {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  background:
+  rgba(255,255,255,0.06);
+
+  border:
+  1px solid rgba(255,255,255,0.08);
+
+  padding: 12px;
+
+  border-radius: 18px;
+
+  max-width: 520px;
+
+  margin: auto;
+}
+
+/* INPUT */
+
+.copy-box input {
+
+  flex: 1;
+
+  border: none;
+
+  outline: none;
+
+  background: transparent;
+
+  color: white;
+
+  font-size: 1rem;
+
+  text-align: center;
+}
+
+/* =========================
    SOCIALS
 ========================= */
 
@@ -732,7 +780,7 @@ footer {
   gap: 18px;
 }
 
-/* SOCIAL CARD */
+/* BASE CARD */
 
 .social-card {
 
@@ -742,45 +790,89 @@ footer {
 
   gap: 10px;
 
-  padding: 14px 20px;
+  padding: 14px 22px;
 
-  border-radius: 16px;
+  border-radius: 18px;
 
   text-decoration: none;
 
   color: white;
 
-  background:
-  rgba(255,255,255,0.06);
-
-  border:
-  1px solid rgba(255,255,255,0.08);
-
-  backdrop-filter: blur(12px);
+  font-weight: 500;
 
   transition: 0.3s ease;
+
+  box-shadow:
+  0 10px 25px rgba(0,0,0,0.2);
 }
 
 .social-card i {
 
   font-size: 1.1rem;
-
-  color: #38bdf8;
 }
+
+/* HOVER */
 
 .social-card:hover {
 
   transform:
-  translateY(-5px)
-  scale(1.05);
-
-  background:
-  rgba(56,189,248,0.12);
-
-  box-shadow:
-  0 10px 30px rgba(56,189,248,0.25);
+  translateY(-6px)
+  scale(1.06);
 }
 
+/* DISCORD */
+
+.discord {
+
+  background:
+  linear-gradient(
+    135deg,
+    #5865F2,
+    #404EED
+  );
+}
+
+.discord:hover {
+
+  box-shadow:
+  0 12px 30px rgba(88,101,242,0.4);
+}
+
+/* ROBLOX */
+
+.roblox {
+
+  background:
+  linear-gradient(
+    135deg,
+    #38bdf8,
+    #0ea5e9
+  );
+}
+
+.roblox:hover {
+
+  box-shadow:
+  0 12px 30px rgba(56,189,248,0.4);
+}
+
+/* GUNS.LOL */
+
+.guns {
+
+  background:
+  linear-gradient(
+    135deg,
+    #ff4fd8,
+    #ff2fb9
+  );
+}
+
+.guns:hover {
+
+  box-shadow:
+  0 12px 30px rgba(255,79,216,0.4);
+}
 /* THEME BUTTON */
 
 #theme-toggle {
