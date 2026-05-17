@@ -231,42 +231,70 @@
 
   </section>
 
-<!-- CONTACT -->
+<p class="contact-label">
+  Email
+</p>
 
-<section id="contact" class="section reveal">
+<div class="copy-box">
 
-  <h2 class="section-title">
-    Contact Me
-  </h2>
+  <input
+    type="text"
+    value="you@example.com"
+    id="emailInput"
+    readonly
+  >
 
-  <div class="contact-card">
+  <button onclick="copyEmail()">
+    <i class="fa-solid fa-copy"></i>
+  </button>
 
-    <p class="contact-label">
-      Email
-    </p>
+</div>
 
-    <div class="copy-box">
+<p class="copy-message" id="copyMessage">
+  Copied!
+</p>
 
-      <input
-        type="text"
-        value="you@example.com"
-        id="emailInput"
-        readonly
-      >
+<!-- SOCIALS -->
 
-      <button onclick="copyEmail()">
-        <i class="fa-solid fa-copy"></i>
-      </button>
+<div class="socials">
 
-    </div>
+  <a
+    href="https://discord.com/"
+    target="_blank"
+    class="social-card"
+  >
 
-    <p class="copy-message" id="copyMessage">
-      Copied!
-    </p>
+    <i class="fa-brands fa-discord"></i>
 
-  </div>
+    <span>Discord</span>
 
-</section>
+  </a>
+
+  <a
+    href="https://www.roblox.com/"
+    target="_blank"
+    class="social-card"
+  >
+
+    <i class="fa-solid fa-gamepad"></i>
+
+    <span>Roblox</span>
+
+  </a>
+
+  <a
+    href="https://guns.lol/"
+    target="_blank"
+    class="social-card"
+  >
+
+    <i class="fa-solid fa-link"></i>
+
+    <span>Guns.lol</span>
+
+  </a>
+
+</div>
 
   <!-- FOOTER -->
 
