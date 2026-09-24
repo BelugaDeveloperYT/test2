@@ -8,8 +8,10 @@
 
   <meta
     name="description"
-    content="MyBot is a powerful Discord bot built to make your server better."
+    content="MyBot — A powerful Discord bot for your server."
   >
+
+  <meta name="theme-color" content="#5865f2">
 
   <title>MyBot — Discord Bot</title>
 
@@ -17,221 +19,337 @@
   <link
     rel="icon"
     type="image/png"
-    href="assets/bot-icon.png"
+    href="/assets/bot-icon.png"
   >
 
-  <link rel="stylesheet" href="style.css">
+  <!-- Stylesheet -->
+  <link
+    rel="stylesheet"
+    href="/style.css"
+  >
 </head>
 
 <body>
 
-  <!-- Navigation -->
+  <!-- ========================= -->
+  <!-- Navigation                -->
+  <!-- ========================= -->
+
   <nav class="navbar">
 
-    <a href="index.html" class="logo">
-      <img
-        src="assets/bot-icon.png"
-        alt="MyBot"
-      >
-      <span>MyBot</span>
-    </a>
+    <div class="nav-container">
 
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="faq.html">FAQ</a>
-      <a href="tos.html">Terms</a>
-      <a href="privacy.html">Privacy</a>
+      <a href="/" class="logo">
+
+        <img
+          src="/assets/bot-icon.png"
+          alt="MyBot"
+        >
+
+        <span>MyBot</span>
+
+      </a>
+
+
+      <div class="nav-links">
+
+        <a href="/" class="active">
+          Home
+        </a>
+
+        <a href="/faq">
+          FAQ
+        </a>
+
+        <a href="/terms">
+          Terms
+        </a>
+
+        <a href="/privacy">
+          Privacy
+        </a>
+
+      </div>
+
     </div>
 
   </nav>
 
 
-  <!-- Hero -->
+  <!-- ========================= -->
+  <!-- Hero                      -->
+  <!-- ========================= -->
+
   <main>
 
     <section class="hero">
 
-      <img
-        src="assets/bot-icon.png"
-        alt="MyBot Icon"
-        class="bot-icon"
-      >
+      <div class="hero-content">
 
-      <h1>
-        Meet <span>MyBot</span>
-      </h1>
-
-      <p class="hero-description">
-        A powerful and easy-to-use Discord bot designed
-        to make managing your server simpler.
-      </p>
-
-      <div class="hero-buttons">
-
-        <a
-          href="YOUR_DISCORD_INVITE_URL"
-          class="invite-button"
-          target="_blank"
-          rel="noopener noreferrer"
+        <img
+          src="/assets/bot-icon.png"
+          alt="MyBot"
+          class="bot-icon"
         >
-          Add to Discord
-        </a>
 
-        <a
-          href="faq.html"
-          class="secondary-button"
-        >
-          Learn More
-        </a>
+
+        <div class="status">
+          <span class="status-dot"></span>
+          Online
+        </div>
+
+
+        <h1>
+          Make your Discord server
+          <span>better.</span>
+        </h1>
+
+
+        <p class="hero-description">
+          MyBot gives your Discord server powerful,
+          reliable, and easy-to-use tools.
+        </p>
+
+
+        <div class="hero-buttons">
+
+          <a
+            href="/invite"
+            class="invite-button"
+          >
+            Add to Discord
+          </a>
+
+
+          <a
+            href="/faq"
+            class="secondary-button"
+          >
+            Learn More
+          </a>
+
+        </div>
 
       </div>
 
     </section>
 
 
-    <!-- Features -->
+    <!-- ========================= -->
+    <!-- Features                   -->
+    <!-- ========================= -->
+
     <section class="features">
 
-      <div class="section-heading">
-        <h2>Powerful Features</h2>
+      <div class="section-header">
+
+        <span class="section-label">
+          FEATURES
+        </span>
+
+        <h2>
+          Everything you need.
+        </h2>
 
         <p>
-          Everything you need to improve your Discord server.
+          Simple tools designed to make managing
+          your Discord server easier.
         </p>
+
       </div>
 
 
       <div class="feature-grid">
 
-        <div class="feature-card">
+
+        <article class="feature-card">
 
           <div class="feature-icon">
             🛡️
           </div>
 
-          <h3>Moderation</h3>
+          <h3>
+            Moderation
+          </h3>
 
           <p>
-            Keep your server safe with useful moderation
-            tools and commands.
+            Keep your community safe with powerful
+            moderation tools.
           </p>
 
-        </div>
+        </article>
 
 
-        <div class="feature-card">
+        <article class="feature-card">
 
           <div class="feature-icon">
             ⚡
           </div>
 
-          <h3>Fast & Reliable</h3>
+          <h3>
+            Fast
+          </h3>
 
           <p>
-            Designed to respond quickly and keep your
-            server running smoothly.
+            Fast responses and reliable performance
+            when your server needs it.
           </p>
 
-        </div>
+        </article>
 
 
-        <div class="feature-card">
+        <article class="feature-card">
 
           <div class="feature-icon">
             ⚙️
           </div>
 
-          <h3>Easy to Use</h3>
+          <h3>
+            Easy to Configure
+          </h3>
 
           <p>
-            Simple commands and straightforward features
-            make MyBot easy to use.
+            Simple commands and configuration make
+            MyBot easy to use.
           </p>
 
-        </div>
+        </article>
 
 
-        <div class="feature-card">
+        <article class="feature-card">
 
           <div class="feature-icon">
             🔧
           </div>
 
-          <h3>Customizable</h3>
+          <h3>
+            Customizable
+          </h3>
 
           <p>
-            Configure MyBot to work the way you want
-            on your Discord server.
+            Configure MyBot to fit the needs of
+            your Discord community.
           </p>
 
-        </div>
+        </article>
+
 
       </div>
 
     </section>
 
 
-    <!-- Call to Action -->
+    <!-- ========================= -->
+    <!-- CTA                        -->
+    <!-- ========================= -->
+
     <section class="cta">
 
-      <img
-        src="assets/bot-icon.png"
-        alt="MyBot"
-        class="cta-icon"
-      >
+      <div class="cta-content">
 
-      <h2>Ready to get started?</h2>
+        <img
+          src="/assets/bot-icon.png"
+          alt="MyBot"
+          class="cta-icon"
+        >
 
-      <p>
-        Add MyBot to your Discord server today.
-      </p>
 
-      <a
-        href="YOUR_DISCORD_INVITE_URL"
-        class="invite-button"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Add MyBot
-      </a>
+        <h2>
+          Ready to get started?
+        </h2>
+
+
+        <p>
+          Add MyBot to your Discord server today.
+        </p>
+
+
+        <a
+          href="/invite"
+          class="invite-button"
+        >
+          Add MyBot
+        </a>
+
+      </div>
 
     </section>
 
   </main>
 
 
-  <!-- Footer -->
+  <!-- ========================= -->
+  <!-- Footer                    -->
+  <!-- ========================= -->
+
   <footer class="footer">
 
-    <div class="footer-content">
+    <div class="footer-container">
+
 
       <div class="footer-brand">
 
-        <img
-          src="assets/bot-icon.png"
-          alt="MyBot"
-        >
+        <a href="/" class="logo">
 
-        <span>MyBot</span>
+          <img
+            src="/assets/bot-icon.png"
+            alt="MyBot"
+          >
+
+          <span>MyBot</span>
+
+        </a>
+
+        <p>
+          A powerful Discord bot for your community.
+        </p>
 
       </div>
 
 
-      <div class="footer-links">
+      <div class="footer-navigation">
 
-        <a href="faq.html">
+        <h4>
+          Navigation
+        </h4>
+
+        <a href="/">
+          Home
+        </a>
+
+        <a href="/faq">
           FAQ
         </a>
 
-        <a href="tos.html">
+        <a href="/terms">
           Terms of Service
         </a>
 
-        <a href="privacy.html">
+        <a href="/privacy">
           Privacy Policy
         </a>
 
       </div>
+
+
+      <div class="footer-navigation">
+
+        <h4>
+          Support
+        </h4>
+
+        <!-- Replace these with your real links -->
+
+        <a href="/faq">
+          FAQ
+        </a>
+
+        <a href="/invite">
+          Add to Discord
+        </a>
+
+      </div>
+
 
     </div>
 
@@ -246,37 +364,6 @@
 
   </footer>
 
+
 </body>
 </html>
-```
-
-### Your folder should look like this
-
-```text
-mybot-site/
-│
-├── index.html
-├── faq.html
-├── tos.html
-├── privacy.html
-├── style.css
-│
-└── assets/
-    └── bot-icon.png
-```
-
-And change:
-
-```html
-href="YOUR_DISCORD_INVITE_URL"
-```
-
-to your real Discord bot invite URL.
-
-For example:
-
-```html
-href="https://discord.com/oauth2/authorize?client_id=123456789&permissions=8&scope=bot%20applications.commands"
-```
-
-You can then make `style.css` match this design with a **modern dark Discord/Dyno-style appe
