@@ -15,14 +15,12 @@
 
   <title>MyBot — Discord Bot</title>
 
-  <!-- Favicon -->
   <link
     rel="icon"
     type="image/png"
     href="/assets/bot-icon.png"
   >
 
-  <!-- Stylesheet -->
   <link
     rel="stylesheet"
     href="/style.css"
@@ -31,44 +29,24 @@
 
 <body>
 
-  <!-- ========================= -->
-  <!-- Navigation                -->
-  <!-- ========================= -->
-
+  <!-- Navigation -->
   <nav class="navbar">
 
     <div class="nav-container">
 
       <a href="/" class="logo">
-
         <img
           src="/assets/bot-icon.png"
           alt="MyBot"
         >
-
         <span>MyBot</span>
-
       </a>
 
-
       <div class="nav-links">
-
-        <a href="/" class="active">
-          Home
-        </a>
-
-        <a href="/faq">
-          FAQ
-        </a>
-
-        <a href="/terms">
-          Terms
-        </a>
-
-        <a href="/privacy">
-          Privacy
-        </a>
-
+        <a href="/" class="active">Home</a>
+        <a href="/faq">FAQ</a>
+        <a href="/terms">Terms</a>
+        <a href="/privacy">Privacy</a>
       </div>
 
     </div>
@@ -76,10 +54,7 @@
   </nav>
 
 
-  <!-- ========================= -->
-  <!-- Hero                      -->
-  <!-- ========================= -->
-
+  <!-- Hero -->
   <main>
 
     <section class="hero">
@@ -92,39 +67,28 @@
           class="bot-icon"
         >
 
-
         <div class="status">
           <span class="status-dot"></span>
           Online
         </div>
-
 
         <h1>
           Make your Discord server
           <span>better.</span>
         </h1>
 
-
         <p class="hero-description">
           MyBot gives your Discord server powerful,
           reliable, and easy-to-use tools.
         </p>
 
-
         <div class="hero-buttons">
 
-          <a
-            href="/invite"
-            class="invite-button"
-          >
+          <a href="/invite" class="invite-button">
             Add to Discord
           </a>
 
-
-          <a
-            href="/faq"
-            class="secondary-button"
-          >
+          <a href="/faq" class="secondary-button">
             Learn More
           </a>
 
@@ -135,10 +99,7 @@
     </section>
 
 
-    <!-- ========================= -->
-    <!-- Features                   -->
-    <!-- ========================= -->
-
+    <!-- Features -->
     <section class="features">
 
       <div class="section-header">
@@ -161,77 +122,175 @@
 
       <div class="feature-grid">
 
-
         <article class="feature-card">
+          <div class="feature-icon">🛡️</div>
 
-          <div class="feature-icon">
-            🛡️
-          </div>
-
-          <h3>
-            Moderation
-          </h3>
+          <h3>Moderation</h3>
 
           <p>
             Keep your community safe with powerful
             moderation tools.
           </p>
-
         </article>
 
 
         <article class="feature-card">
+          <div class="feature-icon">⚡</div>
 
-          <div class="feature-icon">
-            ⚡
-          </div>
-
-          <h3>
-            Fast
-          </h3>
+          <h3>Fast</h3>
 
           <p>
             Fast responses and reliable performance
             when your server needs it.
           </p>
-
         </article>
 
 
         <article class="feature-card">
+          <div class="feature-icon">⚙️</div>
 
-          <div class="feature-icon">
-            ⚙️
-          </div>
-
-          <h3>
-            Easy to Configure
-          </h3>
+          <h3>Easy to Configure</h3>
 
           <p>
             Simple commands and configuration make
             MyBot easy to use.
           </p>
-
         </article>
 
 
         <article class="feature-card">
+          <div class="feature-icon">🔧</div>
 
-          <div class="feature-icon">
-            🔧
-          </div>
-
-          <h3>
-            Customizable
-          </h3>
+          <h3>Customizable</h3>
 
           <p>
             Configure MyBot to fit the needs of
             your Discord community.
           </p>
-
         </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section class="contact">
+
+      <div class="section-header">
+
+        <span class="section-label">
+          CONTACT
+        </span>
+
+        <h2>
+          Need help?
+        </h2>
+
+        <p>
+          Join our Discord server or contact us by email.
+        </p>
+
+      </div>
+
+
+      <div class="contact-grid">
+
+
+        <!-- Discord -->
+        <div class="contact-card">
+
+          <div class="contact-icon">
+            💬
+          </div>
+
+          <div class="contact-info">
+
+            <h3>
+              Discord
+            </h3>
+
+            <p>
+              Join our support server.
+            </p>
+
+            <div class="copy-row">
+
+              <input
+                type="text"
+                value="YOUR_SUPPORT_INVITE"
+                id="discordInvite"
+                readonly
+              >
+
+              <button
+                type="button"
+                onclick="copyText('discordInvite', this)"
+              >
+                Copy
+              </button>
+
+            </div>
+
+            <a
+              href="YOUR_SUPPORT_INVITE"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-link"
+            >
+              Join Discord →
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- Email -->
+        <div class="contact-card">
+
+          <div class="contact-icon">
+            ✉️
+          </div>
+
+          <div class="contact-info">
+
+            <h3>
+              Email
+            </h3>
+
+            <p>
+              Get in touch with our team.
+            </p>
+
+            <div class="copy-row">
+
+              <input
+                type="text"
+                value="YOUR_EMAIL@example.com"
+                id="emailAddress"
+                readonly
+              >
+
+              <button
+                type="button"
+                onclick="copyText('emailAddress', this)"
+              >
+                Copy
+              </button>
+
+            </div>
+
+            <a
+              href="mailto:YOUR_EMAIL@example.com"
+              class="contact-link"
+            >
+              Send Email →
+            </a>
+
+          </div>
+
+        </div>
 
 
       </div>
@@ -239,10 +298,7 @@
     </section>
 
 
-    <!-- ========================= -->
-    <!-- CTA                        -->
-    <!-- ========================= -->
-
+    <!-- CTA -->
     <section class="cta">
 
       <div class="cta-content">
@@ -253,21 +309,15 @@
           class="cta-icon"
         >
 
-
         <h2>
           Ready to get started?
         </h2>
-
 
         <p>
           Add MyBot to your Discord server today.
         </p>
 
-
-        <a
-          href="/invite"
-          class="invite-button"
-        >
+        <a href="/invite" class="invite-button">
           Add MyBot
         </a>
 
@@ -278,14 +328,10 @@
   </main>
 
 
-  <!-- ========================= -->
-  <!-- Footer                    -->
-  <!-- ========================= -->
-
+  <!-- Footer -->
   <footer class="footer">
 
     <div class="footer-container">
-
 
       <div class="footer-brand">
 
@@ -313,21 +359,10 @@
           Navigation
         </h4>
 
-        <a href="/">
-          Home
-        </a>
-
-        <a href="/faq">
-          FAQ
-        </a>
-
-        <a href="/terms">
-          Terms of Service
-        </a>
-
-        <a href="/privacy">
-          Privacy Policy
-        </a>
+        <a href="/">Home</a>
+        <a href="/faq">FAQ</a>
+        <a href="/terms">Terms of Service</a>
+        <a href="/privacy">Privacy Policy</a>
 
       </div>
 
@@ -338,10 +373,8 @@
           Support
         </h4>
 
-        <!-- Replace these with your real links -->
-
-        <a href="/faq">
-          FAQ
+        <a href="#contact">
+          Contact
         </a>
 
         <a href="/invite">
@@ -349,7 +382,6 @@
         </a>
 
       </div>
-
 
     </div>
 
@@ -365,5 +397,44 @@
   </footer>
 
 
+  <!-- Copy functionality -->
+  <script>
+
+    async function copyText(inputId, button) {
+
+      const input = document.getElementById(inputId);
+
+      try {
+
+        await navigator.clipboard.writeText(input.value);
+
+        const originalText = button.textContent;
+
+        button.textContent = "Copied!";
+
+        setTimeout(() => {
+          button.textContent = originalText;
+        }, 1500);
+
+      } catch (error) {
+
+        input.select();
+        document.execCommand("copy");
+
+        button.textContent = "Copied!";
+
+        setTimeout(() => {
+          button.textContent = "Copy";
+        }, 1500);
+
+      }
+
+    }
+
+  </script>
+
 </body>
 </html>
+
+<section class="contact" id="contact">
+
